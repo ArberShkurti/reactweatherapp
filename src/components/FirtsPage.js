@@ -4,7 +4,7 @@ import React from "react";
 const FirtsPage =() => {
 
     return (
-        <p>The fist text</p>
+        <p>Odi te dua shume</p>
     )
 
 }
