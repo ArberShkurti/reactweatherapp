@@ -1,5 +1,6 @@
 import React from "react";
 import FirtsPage from "./components/FirtsPage";
+import "./App.css"
 
 function App() {
   return (
