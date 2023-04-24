@@ -26,7 +26,7 @@ const FirtsPage =() => {
                     onKeyPress={searchLocation}
                     onChange={event => setLocation(event.target.value)}
                     placeholder="Enter Location"
-                    type="tet" />
+                    type="text" />
 
                 </div>
                  <div className="top">
