@@ -23,7 +23,7 @@ const FirtsPage =() => {
                 <div className="search">
                     <input 
                     value={location}
-                    onKeyPress={searchLocation}
+                    onSubmit={searchLocation}
                     onChange={event => setLocation(event.target.value)}
                     placeholder="Enter Location"
                     type="text" />
