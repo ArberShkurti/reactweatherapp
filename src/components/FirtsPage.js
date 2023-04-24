@@ -1,10 +1,15 @@
 import axios from "axios";
 import React, {useState} from "react";
+import Icons from "./Icons";
 import "./FirtsPage.css";
+
+
+
 
 const FirtsPage =() => {
     const [data, setData] = useState ({})
     const [location, setLocation] = useState ('')
+    const [icon, setIcon] = useState('')
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
@@ -14,6 +19,7 @@ const FirtsPage =() => {
             setData(response.data)
             console.log(response.data)})
             setLocation('')
+            setIcon('')
             }
         }
 
@@ -23,7 +29,7 @@ const FirtsPage =() => {
                 <div className="search">
                     <input 
                     value={location}
-                    onSubmit={searchLocation}
+                    onKeyPress={searchLocation}
                     onChange={event => setLocation(event.target.value)}
                     placeholder="Enter Location"
                     type="text" />
@@ -34,10 +40,14 @@ const FirtsPage =() => {
                         <p>{data.name}</p>                    
                     </div>
                     <div className="temp">
-                    {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}            
+                    {/* {data.weather ? <p>{data.weather[0].icon}</p> : null} */}
+                    <img className='icon' src={Icons(icon)} alt="icon-weather" />
+                    {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
+                                           
                      </div>
                      <div className="description">
-                        {data.weather ? <p>{data.weather[0].main}</p> : null}                  
+                        {data.weather ? <p>{data.weather[0].main}</p> : null}
+                                           
                     </div>
                  </div>
 
