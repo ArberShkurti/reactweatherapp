@@ -1,15 +1,12 @@
 import axios from "axios";
 import React, {useState} from "react";
-import Icons from "./Icons";
 import "./FirtsPage.css";
-
-
 
 
 const FirtsPage =() => {
     const [data, setData] = useState ({})
     const [location, setLocation] = useState ('')
-    const [icon, setIcon] = useState('')
+    // const [icon, setIcon] = useState('')
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
@@ -19,7 +16,7 @@ const FirtsPage =() => {
             setData(response.data)
             console.log(response.data)})
             setLocation('')
-            setIcon('')
+            
             }
         }
 
@@ -40,13 +37,16 @@ const FirtsPage =() => {
                         <p>{data.name}</p>                    
                     </div>
                     <div className="temp">
-                    {/* {data.weather ? <p>{data.weather[0].icon}</p> : null} */}
-                    <img className='icon' src={Icons(icon)} alt="icon-weather" />
+              
+                    
                     {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
-                                           
+                    {/* {data.weather ? <img className='icon' src={data.weather[0].main + ".png"} alt="icon-weather" /> : null} */}
+                    {/* <img className='icon' src={data?.weather[0].main + ".png"} alt="icon-weather" /> */}
+
                      </div>
                      <div className="description">
                         {data.weather ? <p>{data.weather[0].main}</p> : null}
+                        
                                            
                     </div>
                  </div>
@@ -73,3 +73,17 @@ const FirtsPage =() => {
 
 
 export default FirtsPage;
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* {data.weather ? <p>{data.weather[0].icon}</p> : null} */}
+      
