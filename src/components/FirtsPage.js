@@ -10,7 +10,7 @@ const FirtsPage =() => {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
-    const searchLocation = (event) => {
+    const searchLocation = async(event) => {
         if (event.key === 'Enter' ) {
             axios.get(url).then((response) =>{
             setData(response.data)
