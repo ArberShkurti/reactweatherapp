@@ -10,13 +10,14 @@ const FirtsPage =() => {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
+    const iconUrl = `https://api.openweathermap.org/img/w`
+
     const searchLocation = async(event) => {
         if (event.key === 'Enter' ) {
             axios.get(url).then((response) =>{
             setData(response.data)
             console.log(response.data)})
-            setLocation('')
-            
+            setLocation('')            
             }
         }
 
@@ -40,7 +41,7 @@ const FirtsPage =() => {
               
                     
                     {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
-                    {/* {data.weather ? <img className='icon' src={data.weather[0].main + ".png"} alt="icon-weather" /> : null} */}
+                    {/* {data.weather ? <img className='icon' src={data.weather[0].main+".png"} alt="icon-weather" /> : null} */}
                     {/* <img className='icon' src={data?.weather[0].main + ".png"} alt="icon-weather" /> */}
 
                      </div>

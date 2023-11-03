@@ -8,6 +8,6 @@ function App() {
       <FirtsPage />
     </div>
   );
-}
+} 
 
 export default App;
