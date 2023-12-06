@@ -67,6 +67,10 @@ const FirtsPage =() => {
                     </div>
                  
                   </div>
+
+                  <div className="dollii">
+                    <img src="/backgrounds/forecast.jpg" alt="p"/>
+                  </div>
             </div>
     )
 
