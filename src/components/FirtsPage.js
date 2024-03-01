@@ -43,9 +43,9 @@ const FirtsPage =() => {
                     {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
                      </div>
 
-                     <div className="ikona">
+                     {/* <div className="ikona">
                         <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}></img>
-                     </div>
+                     </div> */}
 
                      <div className="description">
                         {data.weather ? <p>{data.weather[0].main}</p> : null}               

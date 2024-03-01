@@ -31,9 +31,9 @@
 
   .App::before {
     content: '';
-    background: url("c:\Users\Admin\Downloads\foto\PSX_20210619_222520.jpg") no-repeat center ;
+    background: url("./backgrounds/forecast.jpg")  no-repeat center ;
+    /* background: url("c:\Users\Admin\Downloads\foto\PSX_20210619_222520.jpg") no-repeat center ; */
     background-size: cover;
-    /* background-image: url("https://cdn2.hubspot.net/hubfs/2936356/maxresdefault.jpg"); */
     position: absolute;
     width: 100%;
     height: 100%;
