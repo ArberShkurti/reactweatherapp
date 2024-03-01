@@ -24,6 +24,7 @@ const FirtsPage =() => {
     return (
             
             <div className="container">
+
                 <div className="search">
                     <input 
                     value={location}
@@ -31,25 +32,25 @@ const FirtsPage =() => {
                     onChange={event => setLocation(event.target.value)}
                     placeholder="Enter Location"
                     type="text" />
-
                 </div>
                  <div className="top">
+
                     <div className="location">
                         <p>{data.name}</p>                    
                     </div>
-                    <div className="temp">
-              
-                    
-                    {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
-                    {/* {data.weather ? <img className='icon' src={data.weather[0].main+".png"} alt="icon-weather" /> : null} */}
-                    {/* <img className='icon' src={data?.weather[0].main + ".png"} alt="icon-weather" /> */}
 
+                    <div className="temp">                    
+                    {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
                      </div>
+
+                     <div className="ikona">
+                        <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}></img>
+                     </div>
+
                      <div className="description">
-                        {data.weather ? <p>{data.weather[0].main}</p> : null}
-                        
-                                           
+                        {data.weather ? <p>{data.weather[0].main}</p> : null}               
                     </div>
+
                  </div>
 
                  <div className="bottom">
@@ -65,12 +66,9 @@ const FirtsPage =() => {
                     {data.wind ? <p className="bold">{data.wind.speed.toFixed()} km/h</p> : null}
                         <p className="bold">Wind speed</p>
                     </div>
+                    
                  
                   </div>
-
-                  {/* <div className="dollii">
-                    <img src="./backgrounds/forecast.jpg" alt="p"/>
-                  </div> */}
             </div>
     )
 
