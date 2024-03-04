@@ -6,13 +6,10 @@ import "./FirtsPage.css";
 const FirtsPage =() => {
     const [data, setData] = useState ({})
     const [location, setLocation] = useState ('')
-    // const [icon, setIcon] = useState('')
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
-    const iconUrl = `https://api.openweathermap.org/img/w`
-
-    const searchLocation = async(event) => {
+    const searchLocation = (event) => {
         if (event.key === 'Enter' ) {
             axios.get(url).then((response) =>{
             setData(response.data)
