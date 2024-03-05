@@ -62,9 +62,7 @@ const FirtsPage =() => {
                     <div className="wind">
                     {data.wind ? <p className="bold">{data.wind.speed.toFixed()} km/h</p> : null}
                         <p className="bold">Wind speed</p>
-                    </div>
-                    
-                 
+                    </div>                   
                   </div>
             </div>
     )
