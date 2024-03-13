@@ -64,6 +64,7 @@ const FirtsPage =() => {
                         <p className="bold">Wind speed</p>
                     </div>                   
                   </div>
+                  <div></div>
             </div>
     )
 
