@@ -17,7 +17,9 @@ const FirtsPage =() => {
             setLocation('')            
             }
         }
-
+    const bg =()=>{
+    
+    }
     return (
             
             <div className="container">
