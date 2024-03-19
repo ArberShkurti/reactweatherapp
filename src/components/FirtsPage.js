@@ -17,9 +17,15 @@ const FirtsPage =() => {
             setLocation('')            
             }
         }
-    const bg =()=>{
-    
-    }
+
+    const bg = (event)=>{
+            if (data.main == "rain") {
+                console.log("shiiii");
+            } else {
+                console.log("jo shi");
+            }
+        }
+
     return (
             
             <div className="container">
