@@ -28,7 +28,11 @@ const FirtsPage =() => {
 
     return (
             
-            <div className="container">
+            <div className="container"
+            //  style={{
+            //     backgroundImage : 'url("https://lh3.googleusercontent.com/MglLNtYl17Wp9bUYqzzMRlx054xheB7lpg2z7TnGEmFeKeWKjj9DEaOemzJSkUC8eauTFZelqYN1ZZOjO1ycTGU=s285-c")',
+            //  }}
+             >
 
                 <div className="search">
                     <input 
@@ -42,7 +46,7 @@ const FirtsPage =() => {
 
                     <div className="location">
                         <p>{data.name}</p> 
-                        {data.weather[0].main == "Clear" ? <h2>hapuer</h2> : null }                   
+                        {/* {data.weather[0].main == "Clear" ? <h2>hapur</h2> : null }                    */}
                     </div>
 
                     <div className="temp">                    
