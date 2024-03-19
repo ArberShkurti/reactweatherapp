@@ -18,13 +18,13 @@ const FirtsPage =() => {
             }
         }
 
-    const bg = (event)=>{
-            if (data.main == "rain") {
-                console.log("shiiii");
-            } else {
-                console.log("jo shi");
-            }
-        }
+    // function bg () {
+    //         if (data.weather.main == "Clear") {
+    //             console.log("shiiii");
+    //         } else {
+    //             console.log("jo shi");
+    //         }
+    //     }
 
     return (
             
@@ -41,11 +41,13 @@ const FirtsPage =() => {
                  <div className="top">
 
                     <div className="location">
-                        <p>{data.name}</p>                    
+                        <p>{data.name}</p> 
+                        {data.weather[0].main == "Clear" ? <h2>hapuer</h2> : null }                   
                     </div>
 
                     <div className="temp">                    
                     {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
+                    <p></p>
                      </div>
 
                      {/* <div className="ikona">
