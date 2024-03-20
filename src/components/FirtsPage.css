@@ -28,9 +28,9 @@
     color: #fff;    
   }
 
-  .App::before {
+  /* .App::before {
     content: '';
-    /* background: url("./backgrounds/forecast.jpg")  no-repeat center ; */
+    background: url("./backgrounds/forecast.jpg")  no-repeat center ;
     background: url("C:\Users\Admin\Documents\GitHub\reactweather-app\IMGL9130.JPG") no-repeat  ;
     position: absolute;
     background-size: 100% 100%;
@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-  }
+  } */
 
   .App .search {
     top: 10%;
