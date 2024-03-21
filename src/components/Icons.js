@@ -1,5 +1,3 @@
-
-
 const Icons = (icon) => {
     console.log (icon)
     switch (icon) {

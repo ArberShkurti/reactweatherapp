@@ -2,7 +2,6 @@ import axios from "axios";
 import React, {useState} from "react";
 import "./FirtsPage.css";
 
-
 const FirtsPage =() => {
     const [data, setData] = useState ({})
     const [location, setLocation] = useState ('')
@@ -51,7 +50,7 @@ const FirtsPage =() => {
 
                     <div className="location">
                         <p>{data.name}</p> 
-                        {/* {data.weather[0].main == "Clear" ? <h2>hapur</h2> : null }                    */}
+                        {/* {data.weather[0].main == "Clear" ? <h2>hapur</h2> : null }*/}
                     </div>
 
                     <div className="temp">                    
