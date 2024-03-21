@@ -93,14 +93,5 @@ export default FirtsPage;
 
 
 
-
-
-
-
-
-
-
-
-
       {/* {data.weather ? <p>{data.weather[0].icon}</p> : null} */}
       
