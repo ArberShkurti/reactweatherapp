@@ -54,8 +54,8 @@ const FirtsPage =() => {
                     </div>
 
                     <div className="temp">                    
-                    {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
-                    <p></p>
+                        {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null} 
+                        <p></p>
                      </div>
 
                      {/* <div className="ikona">

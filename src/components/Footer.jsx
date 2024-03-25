@@ -5,14 +5,9 @@ const Footer = () => {
     <div>
         <ul>
             <li>Contact</li>
-        </ul>
-        <ul>
             <li>About us</li>
+            <li>Empty</li>
         </ul>
-        <ul>
-            <li></li>
-        </ul>
-
     </div>
   )
 }
