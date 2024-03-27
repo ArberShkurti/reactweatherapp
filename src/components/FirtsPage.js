@@ -17,13 +17,8 @@ const FirtsPage =() => {
             }
         }
 
-    const bg = {
-            // if (data.weather.main == "Clear") {
-            //     console.log("shiiii");
-            // } else {
-            //     console.log("jo shi");
-            // }
-        }
+    const bg = `${data.weather[0].main}`;
+    console.log({bg});
 
     return (
             
