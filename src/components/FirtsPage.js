@@ -17,13 +17,13 @@ const FirtsPage =() => {
             }
         }
 
-    // function bg () {
-    //         if (data.weather.main == "Clear") {
-    //             console.log("shiiii");
-    //         } else {
-    //             console.log("jo shi");
-    //         }
-    //     }
+    const bg = {
+            // if (data.weather.main == "Clear") {
+            //     console.log("shiiii");
+            // } else {
+            //     console.log("jo shi");
+            // }
+        }
 
     return (
             
