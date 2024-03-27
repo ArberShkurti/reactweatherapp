@@ -22,16 +22,8 @@ const FirtsPage =() => {
 
     return (
             
-            <div className="container"
-/*             style={{
-                                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                backgroundSize: "cover",
-                width: '100vh',
-                height: '100vh'
-
-             }}*/
-             >
+            <div className="container">
+                {bg=="Clear" ? document.body.style.backgroundColor = "blue" : document.body.style.backgroundColor = "red"}
 
                 <div className="search">
                     <input 
@@ -90,3 +82,11 @@ export default FirtsPage;
 
       {/* {data.weather ? <p>{data.weather[0].icon}</p> : null} */}
       
+      /*             style={{
+        backgroundRepeat: 'no-repeat',
+backgroundPosition: 'center',
+backgroundSize: "cover",
+width: '100vh',
+height: '100vh'
+
+}}*/
