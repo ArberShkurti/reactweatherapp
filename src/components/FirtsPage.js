@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, {useState} from "react";
 import "./FirtsPage.css";
+import image1 from "../public/image1.jpg"
+import image2 from "../public/image2.jpg"
 
 const FirtsPage =() => {
     const [data, setData] = useState ({})
