@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, {useState} from "react";
 import "./FirtsPage.css";
-import image1 from "../public/image1.jpg"
-import image2 from "../public/image2.jpg"
+import image1 from './backgrounds/image1.png';
+import image2 from './backgrounds/image2.png';
+
 
 const FirtsPage =() => {
     const [data, setData] = useState ({})
@@ -10,7 +11,7 @@ const FirtsPage =() => {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
-    const searchLocation = (event) => {
+    const searchLocation = async (event) => {
         if (event.key === 'Enter' ) {
             axios.get(url).then((response) =>{
             setData(response.data)
@@ -25,7 +26,8 @@ const FirtsPage =() => {
     return (
             
             <div className="container">
-                {bg=="Clear" ? document.body.style.backgroundColor = "blue" : document.body.style.backgroundColor = "red"}
+                {/* <img src={image1}alt="del"/> */}
+                "{bg=="Clear" ? document.body.style.backgroundImage = `url('${image1}')` : document.body.style.backgroundImage = `url('${image2}')`}"
 
                 <div className="search">
                     <input 
