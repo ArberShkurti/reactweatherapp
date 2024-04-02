@@ -9,6 +9,7 @@ const FirtsPage =() => {
     const [data, setData] = useState ({})
     const [location, setLocation] = useState ('')
 
+
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2170af0c865eb676341892641b02e42a&units=metric`
 
     const searchLocation = async (event) => {
@@ -20,15 +21,13 @@ const FirtsPage =() => {
             }
         }
 
-    const bg = `${data.weather[0].main}`;
-    console.log({bg});
+    // const bg = `${data.weather[0].main}`;
+    // console.log({bg});
 
     return (
-            
             <div className="container">
                 {/* <img src={image1}alt="del"/> */}
-                "{bg=="Clear" ? document.body.style.backgroundImage = `url('${image1}')` : document.body.style.backgroundImage = `url('${image2}')`}"
-
+                
                 <div className="search">
                     <input 
                     value={location}
@@ -37,8 +36,8 @@ const FirtsPage =() => {
                     placeholder="Enter Location"
                     type="text" />
                 </div>
-                 <div className="top">
 
+                 <div className="top">
                     <div className="location">
                         <p>{data.name}</p> 
                         {/* {data.weather[0].main == "Clear" ? <h2>hapur</h2> : null }*/}
@@ -56,7 +55,6 @@ const FirtsPage =() => {
                      <div className="description">
                         {data.weather ? <p>{data.weather[0].main}</p> : null}               
                     </div>
-
                  </div>
 
                  <div className="bottom">
@@ -73,7 +71,8 @@ const FirtsPage =() => {
                         <p className="bold">Wind speed</p>
                     </div>                   
                   </div>
-                  <div></div>
+
+                  {/* {bg=="Clear" ? document.body.style.backgroundImage = `url('${image1}')` : document.body.style.backgroundImage = `url('${image2}')`} */}
             </div>
     )
 
