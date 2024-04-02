@@ -72,7 +72,8 @@ const FirtsPage =() => {
                     </div>                   
                   </div>
 
-                  {/* {bg=="Clear" ? document.body.style.backgroundImage = `url('${image1}')` : document.body.style.backgroundImage = `url('${image2}')`} */}
+                  {/* {bg=="Clear" ? document.body.style.backgroundImage = `url('${image1}')` :
+                   document.body.style.backgroundImage = `url('${image2}')`} */}
             </div>
     )
 
