@@ -6,7 +6,8 @@ const Navbar = () => {
     <div style={{}}>
         <ul>
             <li>Home</li>
-            <li>Sections</li>
+            <li>About</li>
+            <li>Contact</li>
             <li>Sections</li>
 
         </ul>
